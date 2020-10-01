@@ -27,5 +27,19 @@ Module Program
 '        Console.ReadLine()
         Console.Write(vbCrLf + "Press any key to exit... ")
         Console.ReadKey(True)
+
+        Dim i = 1
+
+        Do
+            If i = 10 Then
+                Exit Do
+            End If
+            Console.WriteLine(i)
+            i = i + 1
+        Loop
+    End Sub
+
+    Sub WriteMatrix(ByVal matrix As Integer()())
+        ' ...
     End Sub
 End Module
